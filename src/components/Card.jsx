@@ -49,11 +49,12 @@ const Card = ({ title, price, image }) => {
       <img src={image} alt="Card" style={imageStyle} />
       <div style={contentStyle}>
         <div style={priceStyle}>
-          <h3>Rs: {price}</h3>
+          <h3>Price: {price}</h3>
           <FontAwesomeIcon icon={faHeart} style={{ color: 'bisque', fontSize: '24px' }} />
         </div>
         <p style={product}>
-          {title.length > 32 ? title.slice(0, 32) + '...' : title}          </p>
+          {title.length > 32 ? title.slice(0, 32) + '...' : title}
+        </p>
         <div style={locTime}>
           <div>
             <p >Location</p>
