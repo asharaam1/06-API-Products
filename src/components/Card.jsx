@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ title, price, image }) => {
+
+  //! Styling
   const cardStyle = {
     border: '1px solid #ddd',
     borderRadius: '8px',
@@ -12,18 +14,15 @@ const Card = ({ title, price, image }) => {
     backgroundColor: '#fff',
     overflow: 'hidden', // Ensures content stays within the card boundaries
   };
-
   const imageStyle = {
     width: '300px',
     height: '150px',
     borderRadius: '8px 8px 0 0', // Rounded corners at the top only
     objectFit: 'cover',
   };
-
   const contentStyle = {
     padding: '16px',
   };
-
   const priceStyle = {
     margin: '0 8px',
     display: 'flex',
@@ -36,13 +35,10 @@ const Card = ({ title, price, image }) => {
     alignItems: 'center',
     justifyContent: 'space-between',
     color: 'rgb(104,131,134)'
-
-
-  }
-
+  };
   const product = {
     margin: '8px 8px',
-  }
+  };
 
   return (
     <div style={cardStyle}>
@@ -61,7 +57,7 @@ const Card = ({ title, price, image }) => {
             <p >Time</p>
           </div>
           <div>
-            <Btn title="Purchase" />
+            <Btn title="Purchase" bgcolor="#ffe4c4" width="80px" />
           </div>
         </div>
 

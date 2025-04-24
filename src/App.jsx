@@ -26,8 +26,11 @@ function App() {
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           {products && products.map(item => {
             return (
-              <div key={item.id} style={{ border: '1px solid black', margin: '5px', padding: '5px' }}>
-                <Card title={item.title} price={item.price + '$'} description='good quality light with taiz roshni with long live' image={item.image} />
+              <div key={item.id} style={{ 
+                margin: '5px',
+                padding: '5px' 
+                }}>
+                <Card title={item.title} price={item.price + '$'} image={item.image} />
               </div>
             )
           })}
